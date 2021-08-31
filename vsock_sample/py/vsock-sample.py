@@ -62,7 +62,7 @@ class VsockListener:
                 data = from_client.recv(1024).decode()
                 if not data:
                     break
-                print(data, end='', flush=True)
+                print(data, end='\n', flush=True)
             from_client.close()
 
     def send_data(self, data):
